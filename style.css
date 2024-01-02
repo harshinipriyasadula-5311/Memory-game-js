@@ -1,0 +1,120 @@
+
+body{
+    background-color: rgb(106, 247, 200);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    height: 100%;
+    color: salmon;
+    text-align: center;
+    }
+    h1, h2 {
+    font-weight: 100;
+    font-size: 2.6em;
+    text-transform: uppercase;
+    }
+    hr{
+        width: 630px;
+        border: 2px solid salmon;
+    }
+    h3 {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    }
+    #seconds, #tens {
+    font-size: 2em;
+    }
+    .wrapper{
+        margin-top: 100px;
+    }
+    button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    border: solid 1px #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+
+    }
+    button:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background: #fff;
+    border: solid 1px #fff;
+    color: #82d2e5;
+    }
+    #container {
+    width: 630px;
+    margin: 10px auto;
+    }
+    #container:after {
+    content: "";
+    display: table;
+    clear: both;
+
+    }
+    #matchedText{
+        color: red;
+        font-size: 38px;
+        margin-top: 30px;
+    }
+    [data-view="card"] {
+    transform: rotateY(180deg);
+    width: 100px;
+    height: 140px;
+    border: solid 1px #d3cece;
+    border-radius: 5px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px), linear-gradient(225deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px) 0 64px;
+    background-color: #f3f3f3;
+    background-size: 64px 128px;
+    }
+    .flipped {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+    }
+    .reverse {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(180deg);
+    }
+    .correct {
+    opacity: 0.5;
+    cursor: default;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+    }
+
+    .correct[data-item="img1"], .flipped[data-item="img1"] {
+        background: url("https://rukminim2.flixcart.com/image/850/1000/l3vxbbk0/cut-out/y/r/n/4-doremon01-yaraprint-original-imagewf2hdhjwzbg.jpeg?q=20") left center no-repeat #fff;
+        background-size: contain;
+        }
+        .correct[data-item="img2"], .flipped[data-item="img2"] {
+        background: url("https://rukminim2.flixcart.com/image/850/1000/k3orqfk0/poster/b/f/p/medium-motu-patlu-and-shinchan-cartoon-wall-poster-poster-combos-original-imafmqkf3ydfnbsz.jpeg?q=20") left center no-repeat #fff;
+        background-size: contain;
+        }
+        .correct[data-item="img3"], .flipped[data-item="img3"] {
+        background: url("https://e1.pxfuel.com/desktop-wallpaper/439/272/desktop-wallpaper-ninja-hattori-ninja-hattorri-thumbnail.jpg") left center no-repeat #fff;
+        background-size: contain;
+        }
+        .correct[data-item="img4"], .flipped[data-item="img4"] {
+        background: url("https://lenpenzo.com/blog/wp-content/uploads/2016/07/Dora.jpg") left center no-repeat #fff;
+        background-size: contain;
+        }
+        .correct[data-item="img5"], .flipped[data-item="img5"] {
+        background: url("https://i.pinimg.com/474x/b3/be/65/b3be650a7e162b12eab155ab0839ee06.jpg") left center no-repeat #fff;
+        background-size: contain;
+        }
